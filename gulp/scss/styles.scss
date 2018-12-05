@@ -1,0 +1,304 @@
+@import '_mixins';
+@import '_color';
+//@import '_variables';
+
+
+@include font-face("OpenSans-Regular", "../fonts/OpenSans-Regular", normal, normal);
+@include font-face("OpenSans-Light", "../fonts/OpenSans-Light", normal, normal);
+@include font-face("OpenSans-Bold", "../fonts/OpenSans-Bold", normal, normal);
+
+
+// STYLES 
+
+html{
+    font-family: "OpenSans-Regular";
+}
+
+body.digitalHub{
+nav{
+    background-color: $greyblue;
+}
+
+.htitle{
+    font-family: "OpenSans-Light";
+    position: relative;
+    padding: 30px 0 50px;
+  
+    text-transform: uppercase;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: $bg_btn;
+    }
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/bg_api.png");
+    @include parallaxEffect();
+   
+
+    nav {
+       
+
+        .nav-wrapper {
+            display: flex;
+
+            .brand-logo{width: 320px;}
+
+            .btn{
+                background-color : $bg_btn;
+
+                &:hover{
+                    background-color : $bg_btn_hover;                 
+                }
+            }
+            
+            .btn_mobile_menu {
+                width: 20%;
+                padding-top: 8px;
+
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+    #nav_mobile {
+        display: none;
+    }
+
+    .header_content {
+        text-align: center;
+        padding-top: 40vh;
+
+        
+        h1 {
+            color: $headerTexteColor;
+            font-family: "OpenSans-Regular";
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        p {
+            color: $headerTexteColor;
+            font-size: 1.5em;
+            margin: 0;
+        }
+    }
+}
+
+section{
+    padding: 5rem 0;
+
+    &.alt{
+        background: $bg_alt;
+        
+    }
+
+
+    .icon-block{
+        padding: 10px;
+
+        .btn{
+            background-color : $greyblue;
+        
+            &:hover{
+                background-color : $bg_btn_hover;                 
+            }
+        }
+    }
+
+&#features{
+    background : $greyblue;
+    color: #fff;
+}
+
+&#referentiels{
+    .numscroller{
+        font-family: "OpenSans-Bold";
+        margin:0;
+        color : $bg_btn;
+        font-size: 100PX;}
+    }
+
+}
+
+.section_un_bloc {
+    margin: 2% 0;
+
+    .section_un_bloc_icon {
+        text-align: center;
+
+        .btn-floating {
+            height: 60px;
+            width: 60px;
+            line-height: 69px;
+            cursor: initial;
+        }
+    }
+
+    .section_un_bloc_titre {
+        text-align: center;
+
+        h2 {
+            margin-top: 5%;
+            font-size: 2.3em;
+        }
+    }
+
+    .section_un_bloc_texte {
+        text-align: left;
+    }
+
+    .section_un_bloc_lien {
+        text-align: right;
+    }
+}
+    
+.section_deux {
+    margin: 3% 0;
+
+    .section_deux_bloc_gauche {
+        display: table;
+        height:300px ;
+
+        .section_deux_bloc_gauche_content {
+            display: table-cell;
+            vertical-align: middle;
+
+            h3 {
+                margin:0;
+                text-align: center;
+                font-size: 2.3em;
+               }
+        }
+        
+    
+    }
+
+    .section_deux_bloc_droite {
+        height: 300px;
+        background-image: url("../images/homer.png"); 
+        @include backgroundImage();
+    }
+}
+
+.section_trois {
+    background-color:#ffeaea ;
+    .section_trois_content {
+        padding: 8% 0;
+    
+        h3 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.3em; 
+        }
+    }
+}
+
+.section_quatre {
+    margin-bottom: 0;
+    margin-top: 2%;
+
+    .section_quatre_bloc_gauche {
+        height: 300px;
+        background-image: url("../images/homer.png"); 
+        @include backgroundImage();
+    }
+
+    .section_quatre_bloc_droite { 
+        margin-top: 5%;
+        display: table;
+        height: 300px;
+        
+        .section_quatre_bloc_droite_content {
+            display: table-cell;
+            vertical-align: middle;
+
+            h3 {
+                margin: 0;
+                text-align: center;
+                font-size: 2.3em;
+            }
+        }
+    }
+}
+
+// TABLETTE ET MOBILE PAYSAGE
+@media screen and (min-width: 600px) and (max-width: 992px){
+//HEADER
+    .header {
+        margin-bottom: 0;
+        .btn_mobile_menu {
+            padding-top: 0 !important;
+        }
+    }
+//CONTENT
+    .section_un_bloc {
+        margin: 2% 0;
+            
+        .section_un_bloc_icon {
+                
+            .btn-floating {
+                height: 80px;
+                width: 80px;
+                line-height: 89px;
+            }
+                        
+            .section_un_bloc_titre {
+                h2 {
+                    margin-top: 2%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+        
+    .section_deux {
+        margin: 2% 0;
+    }
+            
+    .section_trois {
+        margin: 5% 0;
+    }
+                    
+    .section_quatre {
+        margin: 2% 0;
+    }
+}
+
+// DESKTOP ET LARGE DESKTOP
+@media screen and (min-width: 993px) {
+//HEADER
+    .nav-wrapper {
+        display: block !important;
+
+        .btn_mobile_menu {
+            display: none;
+        }
+
+        #nav_mobile {
+            display: none;
+        }
+    }
+//CONTENT
+
+    .section_trois {
+        padding:0;
+    }
+}
+
+
+
+
+
+}
