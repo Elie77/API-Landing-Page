@@ -19,16 +19,86 @@
   src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("OpenSans-Bold", " ", "_")') format("svg");
 }
 
+@font-face {
+  font-family: "Lato-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Black", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-BlackItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-BlackItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Bold", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-BoldItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-BoldItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Hairline";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Hairline", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-HairlineItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-HairlineItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Italic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Light", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-LightItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-LightItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Regular", " ", "_")') format("svg");
+}
+
 html {
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-Light";
 }
 
 body.digitalHub nav {
-  background-color: #242532;
+  background-color: #fff;
 }
 
 body.digitalHub .htitle {
-  font-family: "OpenSans-Light";
+  font-family: "Lato-Light";
   position: relative;
   padding: 30px 0 50px;
   text-transform: uppercase;
@@ -42,7 +112,7 @@ body.digitalHub .htitle:before {
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: #ff0f3e;
+  background-color: #fe4943;
 }
 
 body.digitalHub .header {
@@ -59,21 +129,36 @@ body.digitalHub .header nav .nav-wrapper {
   display: flex;
 }
 
+body.digitalHub .header nav .nav-wrapper .fa-bars {
+  color: #131313;
+}
+
 body.digitalHub .header nav .nav-wrapper .brand-logo {
   width: 320px;
 }
 
+body.digitalHub .header nav .nav-wrapper ul li a {
+  color: #242532;
+}
+
+body.digitalHub .header nav .nav-wrapper ul li a:hover {
+  color: #fff;
+  background-color: #fe4943;
+  opacity: 0.8;
+}
+
 body.digitalHub .header nav .nav-wrapper .btn {
-  background-color: #ff0f3e;
+  background-color: #fe4943;
+  color: #fff;
 }
 
 body.digitalHub .header nav .nav-wrapper .btn:hover {
-  background-color: #d40931;
+  background-color: #fe4943;
 }
 
 body.digitalHub .header nav .nav-wrapper .btn_mobile_menu {
   width: 20%;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 
 body.digitalHub .header nav .nav-wrapper .btn_mobile_menu i {
@@ -84,6 +169,25 @@ body.digitalHub .header #nav_mobile {
   display: none;
 }
 
+body.digitalHub .header #nav_mobile ul li a {
+  color: #242532;
+}
+
+body.digitalHub .header #nav_mobile ul li a:hover {
+  color: #fff;
+  background-color: #fe4943;
+  opacity: 0.8;
+}
+
+body.digitalHub .header #nav_mobile .btn {
+  background-color: #fe4943;
+  color: #fff;
+}
+
+body.digitalHub .header #nav_mobile .btn:hover {
+  background-color: #fe4943;
+}
+
 body.digitalHub .header .header_content {
   text-align: center;
   padding-top: 40vh;
@@ -91,151 +195,66 @@ body.digitalHub .header .header_content {
 
 body.digitalHub .header .header_content h1 {
   color: #fff;
-  font-family: "OpenSans-Regular";
-  font-size: 3.5em;
+  font-family: "Lato-Regular";
+  font-size: 2.5em;
   margin: 0;
 }
 
 body.digitalHub .header .header_content p {
   color: #fff;
+  font-family: "Lato-Regular";
   font-size: 1.5em;
   margin: 0;
 }
 
-body.digitalHub section {
-  padding: 5rem 0;
+body.digitalHub .header .header_content .btn-floating {
+  background-color: #fe4943;
+  margin-top: 2.5%;
 }
 
-body.digitalHub section.alt {
-  background: #ececec;
-}
-
-body.digitalHub section .icon-block {
-  padding: 10px;
-}
-
-body.digitalHub section .icon-block .btn {
-  background-color: #242532;
-}
-
-body.digitalHub section .icon-block .btn:hover {
-  background-color: #d40931;
-}
-
-body.digitalHub section#features {
-  background: #242532;
+body.digitalHub .content {
+  background-color: #12112f;
   color: #fff;
 }
 
-body.digitalHub section#referentiels .numscroller {
-  font-family: "OpenSans-Bold";
+body.digitalHub .content h2, body.digitalHub .content h3, body.digitalHub .content h4, body.digitalHub .content h5, body.digitalHub .content h6 {
+  font-family: "Lato-Regular";
+}
+
+body.digitalHub .content section {
+  padding: 4rem 0;
+}
+
+body.digitalHub .content section .icon-block {
+  padding: 10px;
+}
+
+body.digitalHub .content section .icon-block .btn {
+  background-color: #fe4943;
+}
+
+body.digitalHub .content section .icon-block .btn:hover {
+  background-color: #fe4943;
+}
+
+body.digitalHub .content section#features {
+  color: #fff;
+  background-color: #fe4943;
+}
+
+body.digitalHub .content section#referentiels .numscroller {
+  font-family: "Lato-Bold";
   margin: 0;
-  color: #ff0f3e;
-  font-size: 100PX;
+  color: #fe4943;
+  font-size: 80PX;
 }
 
-body.digitalHub .section_un_bloc {
-  margin: 2% 0;
+body.digitalHub .page-footer {
+  background-color: #151515;
 }
 
-body.digitalHub .section_un_bloc .section_un_bloc_icon {
-  text-align: center;
-}
-
-body.digitalHub .section_un_bloc .section_un_bloc_icon .btn-floating {
-  height: 60px;
-  width: 60px;
-  line-height: 69px;
-  cursor: initial;
-}
-
-body.digitalHub .section_un_bloc .section_un_bloc_titre {
-  text-align: center;
-}
-
-body.digitalHub .section_un_bloc .section_un_bloc_titre h2 {
-  margin-top: 5%;
-  font-size: 2.3em;
-}
-
-body.digitalHub .section_un_bloc .section_un_bloc_texte {
-  text-align: left;
-}
-
-body.digitalHub .section_un_bloc .section_un_bloc_lien {
-  text-align: right;
-}
-
-body.digitalHub .section_deux {
-  margin: 3% 0;
-}
-
-body.digitalHub .section_deux .section_deux_bloc_gauche {
-  display: table;
-  height: 300px;
-}
-
-body.digitalHub .section_deux .section_deux_bloc_gauche .section_deux_bloc_gauche_content {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-body.digitalHub .section_deux .section_deux_bloc_gauche .section_deux_bloc_gauche_content h3 {
-  margin: 0;
-  text-align: center;
-  font-size: 2.3em;
-}
-
-body.digitalHub .section_deux .section_deux_bloc_droite {
-  height: 300px;
-  background-image: url("../images/homer.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-body.digitalHub .section_trois {
-  background-color: #ffeaea;
-}
-
-body.digitalHub .section_trois .section_trois_content {
-  padding: 8% 0;
-}
-
-body.digitalHub .section_trois .section_trois_content h3 {
-  margin: 0;
-  text-align: center;
-  font-size: 2.3em;
-}
-
-body.digitalHub .section_quatre {
-  margin-bottom: 0;
-  margin-top: 2%;
-}
-
-body.digitalHub .section_quatre .section_quatre_bloc_gauche {
-  height: 300px;
-  background-image: url("../images/homer.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-body.digitalHub .section_quatre .section_quatre_bloc_droite {
-  margin-top: 5%;
-  display: table;
-  height: 300px;
-}
-
-body.digitalHub .section_quatre .section_quatre_bloc_droite .section_quatre_bloc_droite_content {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-body.digitalHub .section_quatre .section_quatre_bloc_droite .section_quatre_bloc_droite_content h3 {
-  margin: 0;
-  text-align: center;
-  font-size: 2.3em;
+body.digitalHub .footer-copyright {
+  background-color: #131313;
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
@@ -244,27 +263,6 @@ body.digitalHub .section_quatre .section_quatre_bloc_droite .section_quatre_bloc
   }
   body.digitalHub .header .btn_mobile_menu {
     padding-top: 0 !important;
-  }
-  body.digitalHub .section_un_bloc {
-    margin: 2% 0;
-  }
-  body.digitalHub .section_un_bloc .section_un_bloc_icon .btn-floating {
-    height: 80px;
-    width: 80px;
-    line-height: 89px;
-  }
-  body.digitalHub .section_un_bloc .section_un_bloc_icon .section_un_bloc_titre h2 {
-    margin-top: 2%;
-    text-align: center;
-  }
-  body.digitalHub .section_deux {
-    margin: 2% 0;
-  }
-  body.digitalHub .section_trois {
-    margin: 5% 0;
-  }
-  body.digitalHub .section_quatre {
-    margin: 2% 0;
   }
 }
 
@@ -278,7 +276,7 @@ body.digitalHub .section_quatre .section_quatre_bloc_droite .section_quatre_bloc
   body.digitalHub .nav-wrapper #nav_mobile {
     display: none;
   }
-  body.digitalHub .section_trois {
-    padding: 0;
+  body.digitalHub .header_content h1 {
+    font-size: 3.5em !important;
   }
 }
