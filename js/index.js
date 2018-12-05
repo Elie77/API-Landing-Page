@@ -19,3 +19,16 @@ AOS.init();
     };
     mobileMenu.init();
 })();
+
+(function() {
+    var smoothScroll = {
+        init : function() {
+            document.getElementsByClassName("fa-chevron-double-down")[0].addEventListener("click", function(event){
+                document.getElementsByClassName('content')[0].scrollIntoView({
+                    behavior: 'smooth', block: "start"
+                })
+            })
+        }
+    }
+    smoothScroll.init();
+})();
