@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Regular.eot?") format("eot"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url('../fonts/OpenSans-Regular.svg#str-replace("OpenSans-Regular", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Light.eot?") format("eot"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url('../fonts/OpenSans-Light.svg#str-replace("OpenSans-Light", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("OpenSans-Bold", " ", "_")') format("svg");
+}
+
+html {
+  font-family: "OpenSans-Regular";
+}
+
+body.digitalHub nav {
+  background-color: #242532;
+}
+
+body.digitalHub .htitle {
+  font-family: "OpenSans-Light";
+  position: relative;
+  padding: 30px 0 50px;
+  text-transform: uppercase;
+}
+
+body.digitalHub .htitle:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ff0f3e;
+}
+
+body.digitalHub .header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/bg_api.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.digitalHub .header nav .nav-wrapper {
+  display: flex;
+}
+
+body.digitalHub .header nav .nav-wrapper .brand-logo {
+  width: 320px;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn {
+  background-color: #ff0f3e;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn:hover {
+  background-color: #d40931;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn_mobile_menu {
+  width: 20%;
+  padding-top: 8px;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn_mobile_menu i {
+  cursor: pointer;
+}
+
+body.digitalHub .header #nav_mobile {
+  display: none;
+}
+
+body.digitalHub .header .header_content {
+  text-align: center;
+  padding-top: 40vh;
+}
+
+body.digitalHub .header .header_content h1 {
+  color: #fff;
+  font-family: "OpenSans-Regular";
+  font-size: 3.5em;
+  margin: 0;
+}
+
+body.digitalHub .header .header_content p {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+body.digitalHub section {
+  padding: 5rem 0;
+}
+
+body.digitalHub section.alt {
+  background: #ececec;
+}
+
+body.digitalHub section .icon-block {
+  padding: 10px;
+}
+
+body.digitalHub section .icon-block .btn {
+  background-color: #242532;
+}
+
+body.digitalHub section .icon-block .btn:hover {
+  background-color: #d40931;
+}
+
+body.digitalHub section#features {
+  background: #242532;
+  color: #fff;
+}
+
+body.digitalHub section#referentiels .numscroller {
+  font-family: "OpenSans-Bold";
+  margin: 0;
+  color: #ff0f3e;
+  font-size: 100PX;
+}
+
+body.digitalHub .section_un_bloc {
+  margin: 2% 0;
+}
+
+body.digitalHub .section_un_bloc .section_un_bloc_icon {
+  text-align: center;
+}
+
+body.digitalHub .section_un_bloc .section_un_bloc_icon .btn-floating {
+  height: 60px;
+  width: 60px;
+  line-height: 69px;
+  cursor: initial;
+}
+
+body.digitalHub .section_un_bloc .section_un_bloc_titre {
+  text-align: center;
+}
+
+body.digitalHub .section_un_bloc .section_un_bloc_titre h2 {
+  margin-top: 5%;
+  font-size: 2.3em;
+}
+
+body.digitalHub .section_un_bloc .section_un_bloc_texte {
+  text-align: left;
+}
+
+body.digitalHub .section_un_bloc .section_un_bloc_lien {
+  text-align: right;
+}
+
+body.digitalHub .section_deux {
+  margin: 3% 0;
+}
+
+body.digitalHub .section_deux .section_deux_bloc_gauche {
+  display: table;
+  height: 300px;
+}
+
+body.digitalHub .section_deux .section_deux_bloc_gauche .section_deux_bloc_gauche_content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body.digitalHub .section_deux .section_deux_bloc_gauche .section_deux_bloc_gauche_content h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+body.digitalHub .section_deux .section_deux_bloc_droite {
+  height: 300px;
+  background-image: url("../images/homer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body.digitalHub .section_trois {
+  background-color: #ffeaea;
+}
+
+body.digitalHub .section_trois .section_trois_content {
+  padding: 8% 0;
+}
+
+body.digitalHub .section_trois .section_trois_content h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+body.digitalHub .section_quatre {
+  margin-bottom: 0;
+  margin-top: 2%;
+}
+
+body.digitalHub .section_quatre .section_quatre_bloc_gauche {
+  height: 300px;
+  background-image: url("../images/homer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body.digitalHub .section_quatre .section_quatre_bloc_droite {
+  margin-top: 5%;
+  display: table;
+  height: 300px;
+}
+
+body.digitalHub .section_quatre .section_quatre_bloc_droite .section_quatre_bloc_droite_content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body.digitalHub .section_quatre .section_quatre_bloc_droite .section_quatre_bloc_droite_content h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body.digitalHub .header {
+    margin-bottom: 0;
+  }
+  body.digitalHub .header .btn_mobile_menu {
+    padding-top: 0 !important;
+  }
+  body.digitalHub .section_un_bloc {
+    margin: 2% 0;
+  }
+  body.digitalHub .section_un_bloc .section_un_bloc_icon .btn-floating {
+    height: 80px;
+    width: 80px;
+    line-height: 89px;
+  }
+  body.digitalHub .section_un_bloc .section_un_bloc_icon .section_un_bloc_titre h2 {
+    margin-top: 2%;
+    text-align: center;
+  }
+  body.digitalHub .section_deux {
+    margin: 2% 0;
+  }
+  body.digitalHub .section_trois {
+    margin: 5% 0;
+  }
+  body.digitalHub .section_quatre {
+    margin: 2% 0;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  body.digitalHub .nav-wrapper {
+    display: block !important;
+  }
+  body.digitalHub .nav-wrapper .btn_mobile_menu {
+    display: none;
+  }
+  body.digitalHub .nav-wrapper #nav_mobile {
+    display: none;
+  }
+  body.digitalHub .section_trois {
+    padding: 0;
+  }
+}
