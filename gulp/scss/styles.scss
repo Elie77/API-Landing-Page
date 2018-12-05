@@ -6,21 +6,31 @@
 @include font-face("OpenSans-Regular", "../fonts/OpenSans-Regular", normal, normal);
 @include font-face("OpenSans-Light", "../fonts/OpenSans-Light", normal, normal);
 @include font-face("OpenSans-Bold", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Black", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-BlackItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Bold", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-BoldItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Hairline", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-HairlineItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Italic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Light", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-LightItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Regular", "../fonts/OpenSans-Bold", normal, normal);
 
 
 // STYLES 
 
 html{
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans-Light";
 }
 
 body.digitalHub{
 nav{
-    background-color: $greyblue;
+    background-color: $white;
 }
 
 .htitle{
-    font-family: "OpenSans-Light";
+    font-family: "Lato-Light";
     position: relative;
     padding: 30px 0 50px;
   
@@ -46,15 +56,29 @@ nav{
    
 
     nav {
-       
 
         .nav-wrapper {
             display: flex;
 
+            .fa-bars {
+                color: $fondCopyright;
+            }
+
             .brand-logo{width: 320px;}
+
+            ul li a {
+                color: $greyblue;
+            }
+
+            ul li a:hover {
+                color: $white;
+                background-color: $bg_btn;
+                opacity: 0.8;
+            }
 
             .btn{
                 background-color : $bg_btn;
+                color: $white;
 
                 &:hover{
                     background-color : $bg_btn_hover;                 
@@ -63,7 +87,7 @@ nav{
             
             .btn_mobile_menu {
                 width: 20%;
-                padding-top: 8px;
+                padding-top: 5px;
 
                 i {
                     cursor: pointer;
@@ -74,6 +98,25 @@ nav{
     
     #nav_mobile {
         display: none;
+
+        ul li a {
+            color: $greyblue;
+        }
+
+        ul li a:hover {
+            color: $white;
+            background-color: $bg_btn;
+            opacity: 0.8;
+        }
+
+        .btn{
+            background-color : $bg_btn;
+            color: $white;
+
+            &:hover{
+                background-color : $bg_btn_hover;                 
+            }
+        }
     }
 
     .header_content {
@@ -82,155 +125,71 @@ nav{
 
         
         h1 {
-            color: $headerTexteColor;
-            font-family: "OpenSans-Regular";
-            font-size: 3.5em;
+            color: $white;
+            font-family: "Lato-Regular";
+            font-size: 2.5em;
             margin: 0;
         }
 
         p {
-            color: $headerTexteColor;
+            color: $white;
+            font-family: "Lato-Regular";
             font-size: 1.5em;
             margin: 0;
         }
-    }
-}
-
-section{
-    padding: 5rem 0;
-
-    &.alt{
-        background: $bg_alt;
-        
-    }
-
-
-    .icon-block{
-        padding: 10px;
-
-        .btn{
-            background-color : $greyblue;
-        
-            &:hover{
-                background-color : $bg_btn_hover;                 
-            }
-        }
-    }
-
-&#features{
-    background : $greyblue;
-    color: #fff;
-}
-
-&#referentiels{
-    .numscroller{
-        font-family: "OpenSans-Bold";
-        margin:0;
-        color : $bg_btn;
-        font-size: 100PX;}
-    }
-
-}
-
-.section_un_bloc {
-    margin: 2% 0;
-
-    .section_un_bloc_icon {
-        text-align: center;
 
         .btn-floating {
-            height: 60px;
-            width: 60px;
-            line-height: 69px;
-            cursor: initial;
-        }
-    }
-
-    .section_un_bloc_titre {
-        text-align: center;
-
-        h2 {
-            margin-top: 5%;
-            font-size: 2.3em;
-        }
-    }
-
-    .section_un_bloc_texte {
-        text-align: left;
-    }
-
-    .section_un_bloc_lien {
-        text-align: right;
-    }
-}
-    
-.section_deux {
-    margin: 3% 0;
-
-    .section_deux_bloc_gauche {
-        display: table;
-        height:300px ;
-
-        .section_deux_bloc_gauche_content {
-            display: table-cell;
-            vertical-align: middle;
-
-            h3 {
-                margin:0;
-                text-align: center;
-                font-size: 2.3em;
-               }
-        }
-        
-    
-    }
-
-    .section_deux_bloc_droite {
-        height: 300px;
-        background-image: url("../images/homer.png"); 
-        @include backgroundImage();
-    }
-}
-
-.section_trois {
-    background-color:#ffeaea ;
-    .section_trois_content {
-        padding: 8% 0;
-    
-        h3 {
-            margin: 0;
-            text-align: center;
-            font-size: 2.3em; 
+            background-color: $bg_btn;
+            margin-top: 2.5%;
         }
     }
 }
 
-.section_quatre {
-    margin-bottom: 0;
-    margin-top: 2%;
+.content {
+    background-color: $fondBackgroundColor;
+    color: $white;
 
-    .section_quatre_bloc_gauche {
-        height: 300px;
-        background-image: url("../images/homer.png"); 
-        @include backgroundImage();
+    h2,h3,h4,h5,h6 {
+        font-family: "Lato-Regular";
     }
 
-    .section_quatre_bloc_droite { 
-        margin-top: 5%;
-        display: table;
-        height: 300px;
-        
-        .section_quatre_bloc_droite_content {
-            display: table-cell;
-            vertical-align: middle;
-
-            h3 {
-                margin: 0;
-                text-align: center;
-                font-size: 2.3em;
+    section{
+        padding: 4rem 0;
+    
+        .icon-block{
+            padding: 10px;
+    
+            .btn{
+                background-color : $bg_btn;
+            
+                &:hover{
+                    background-color : $bg_btn_hover;                 
+                }
             }
         }
+    
+    &#features{
+        color: $white;
+        background-color: $bg_btn;
     }
+    
+    &#referentiels{
+        .numscroller{
+            font-family: "Lato-Bold";
+            margin:0;
+            color : $bg_btn;
+            font-size: 80PX;}
+        }
+    
+    }
+}
+
+.page-footer {
+    background-color: $fondFooter;
+}
+
+.footer-copyright {
+    background-color: $fondCopyright;
 }
 
 // TABLETTE ET MOBILE PAYSAGE
@@ -241,38 +200,6 @@ section{
         .btn_mobile_menu {
             padding-top: 0 !important;
         }
-    }
-//CONTENT
-    .section_un_bloc {
-        margin: 2% 0;
-            
-        .section_un_bloc_icon {
-                
-            .btn-floating {
-                height: 80px;
-                width: 80px;
-                line-height: 89px;
-            }
-                        
-            .section_un_bloc_titre {
-                h2 {
-                    margin-top: 2%;
-                    text-align: center;
-                }
-            }
-        }
-    }
-        
-    .section_deux {
-        margin: 2% 0;
-    }
-            
-    .section_trois {
-        margin: 5% 0;
-    }
-                    
-    .section_quatre {
-        margin: 2% 0;
     }
 }
 
@@ -290,15 +217,12 @@ section{
             display: none;
         }
     }
-//CONTENT
 
-    .section_trois {
-        padding:0;
+    .header_content {
+        h1{
+            font-size: 3.5em !important;
+        }
     }
+
 }
-
-
-
-
-
 }
