@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Regular.eot?") format("eot"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url('../fonts/OpenSans-Regular.svg#str-replace("OpenSans-Regular", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Light.eot?") format("eot"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url('../fonts/OpenSans-Light.svg#str-replace("OpenSans-Light", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("OpenSans-Bold", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Black", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-BlackItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-BlackItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Bold", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-BoldItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-BoldItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Hairline";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Hairline", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-HairlineItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-HairlineItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Italic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Light", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-LightItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-LightItalic", " ", "_")') format("svg");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSans-Bold.eot?") format("eot"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url('../fonts/OpenSans-Bold.svg#str-replace("Lato-Regular", " ", "_")') format("svg");
+}
+
+html {
+  font-family: "OpenSans-Light";
+}
+
+body.digitalHub nav {
+  background-color: #fff;
+}
+
+body.digitalHub .htitle {
+  font-family: "Lato-Light";
+  position: relative;
+  padding: 30px 0 50px;
+  text-transform: uppercase;
+}
+
+body.digitalHub .htitle:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #fe4943;
+}
+
+body.digitalHub .header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/bg_api.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.digitalHub .header nav .nav-wrapper {
+  display: flex;
+}
+
+body.digitalHub .header nav .nav-wrapper .fa-bars {
+  color: #131313;
+}
+
+body.digitalHub .header nav .nav-wrapper .brand-logo {
+  width: 320px;
+}
+
+body.digitalHub .header nav .nav-wrapper ul li a {
+  color: #242532;
+}
+
+body.digitalHub .header nav .nav-wrapper ul li a:hover {
+  color: #fff;
+  background-color: #fe4943;
+  opacity: 0.8;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn {
+  background-color: #fe4943;
+  color: #fff;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn:hover {
+  background-color: #fe4943;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn_mobile_menu {
+  width: 20%;
+  padding-top: 5px;
+}
+
+body.digitalHub .header nav .nav-wrapper .btn_mobile_menu i {
+  cursor: pointer;
+}
+
+body.digitalHub .header #nav_mobile {
+  display: none;
+}
+
+body.digitalHub .header #nav_mobile ul li a {
+  color: #242532;
+}
+
+body.digitalHub .header #nav_mobile ul li a:hover {
+  color: #fff;
+  background-color: #fe4943;
+  opacity: 0.8;
+}
+
+body.digitalHub .header #nav_mobile .btn {
+  background-color: #fe4943;
+  color: #fff;
+}
+
+body.digitalHub .header #nav_mobile .btn:hover {
+  background-color: #fe4943;
+}
+
+body.digitalHub .header .header_content {
+  text-align: center;
+  padding-top: 40vh;
+}
+
+body.digitalHub .header .header_content h1 {
+  color: #fff;
+  font-family: "Lato-Regular";
+  font-size: 2.5em;
+  margin: 0;
+}
+
+body.digitalHub .header .header_content p {
+  color: #fff;
+  font-family: "Lato-Regular";
+  font-size: 1.5em;
+  margin: 0;
+}
+
+body.digitalHub .header .header_content .btn-floating {
+  background-color: #fe4943;
+  margin-top: 2em;
+}
+
+body.digitalHub .content {
+  background-color: #12112f;
+  color: #fff;
+}
+
+body.digitalHub .content h2, body.digitalHub .content h3, body.digitalHub .content h4, body.digitalHub .content h5, body.digitalHub .content h6 {
+  font-family: "Lato-Regular";
+}
+
+body.digitalHub .content section {
+  padding: 4rem 0;
+}
+
+body.digitalHub .content section .icon-block {
+  padding: 10px;
+}
+
+body.digitalHub .content section .icon-block .btn {
+  background-color: #fe4943;
+}
+
+body.digitalHub .content section .icon-block .btn:hover {
+  background-color: #fe4943;
+}
+
+body.digitalHub .content section#features {
+  color: #fff;
+  background-color: #fe4943;
+}
+
+body.digitalHub .content section#referentiels .numscroller {
+  font-family: "Lato-Bold";
+  margin: 0;
+  color: #fe4943;
+  font-size: 80PX;
+}
+
+body.digitalHub .page-footer {
+  background-color: #151515;
+}
+
+body.digitalHub .footer-copyright {
+  background-color: #131313;
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body.digitalHub .header {
+    margin-bottom: 0;
+  }
+  body.digitalHub .header .btn_mobile_menu {
+    padding-top: 0 !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  body.digitalHub .nav-wrapper {
+    display: block !important;
+  }
+  body.digitalHub .nav-wrapper .btn_mobile_menu {
+    display: none;
+  }
+  body.digitalHub .nav-wrapper #nav_mobile {
+    display: none;
+  }
+  body.digitalHub .header_content h1 {
+    font-size: 3.5em !important;
+  }
+}
