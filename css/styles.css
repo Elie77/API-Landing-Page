@@ -133,8 +133,9 @@ body.digitalHub .header nav .nav-wrapper .fa-bars {
   color: #131313;
 }
 
-body.digitalHub .header nav .nav-wrapper .brand-logo {
-  width: 320px;
+body.digitalHub .header nav .nav-wrapper .brand-logo img {
+  width: 200px;
+  vertical-align: sub;
 }
 
 body.digitalHub .header nav .nav-wrapper ul li a {
@@ -190,7 +191,7 @@ body.digitalHub .header #nav_mobile .btn:hover {
 
 body.digitalHub .header .header_content {
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 30vh;
 }
 
 body.digitalHub .header .header_content h1 {
@@ -209,11 +210,11 @@ body.digitalHub .header .header_content p {
 
 body.digitalHub .header .header_content .btn-floating {
   background-color: #fe4943;
-  margin-top: 2.5%;
+  margin-top: 10vh;
 }
 
 body.digitalHub .content {
-  background-color: #12112f;
+  background-color: #161d35;
   color: #fff;
 }
 
@@ -222,7 +223,8 @@ body.digitalHub .content h2, body.digitalHub .content h3, body.digitalHub .conte
 }
 
 body.digitalHub .content section {
-  padding: 4rem 0;
+  padding: 12rem 0;
+  min-height: 100vh;
 }
 
 body.digitalHub .content section .icon-block {
