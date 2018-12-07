@@ -1,0 +1,228 @@
+@import '_mixins';
+@import '_color';
+//@import '_variables';
+
+
+@include font-face("OpenSans-Regular", "../fonts/OpenSans-Regular", normal, normal);
+@include font-face("OpenSans-Light", "../fonts/OpenSans-Light", normal, normal);
+@include font-face("OpenSans-Bold", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Black", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-BlackItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Bold", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-BoldItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Hairline", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-HairlineItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Italic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Light", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-LightItalic", "../fonts/OpenSans-Bold", normal, normal);
+@include font-face("Lato-Regular", "../fonts/OpenSans-Bold", normal, normal);
+
+
+// STYLES 
+
+html{
+    font-family: "OpenSans-Light";
+}
+
+body.digitalHub{
+nav{
+    background-color: $white;
+}
+
+.htitle{
+    font-family: "Lato-Light";
+    position: relative;
+    padding: 30px 0 50px;
+  
+    text-transform: uppercase;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: $bg_btn;
+    }
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/bg_api.png");
+    @include parallaxEffect();
+   
+
+    nav {
+
+        .nav-wrapper {
+            display: flex;
+
+            .fa-bars {
+                color: $fondCopyright;
+            }
+
+            .brand-logo{width: 320px;}
+
+            ul li a {
+                color: $greyblue;
+            }
+
+            ul li a:hover {
+                color: $white;
+                background-color: $bg_btn;
+                opacity: 0.8;
+            }
+
+            .btn{
+                background-color : $bg_btn;
+                color: $white;
+
+                &:hover{
+                    background-color : $bg_btn_hover;                 
+                }
+            }
+            
+            .btn_mobile_menu {
+                width: 20%;
+                padding-top: 5px;
+
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+    #nav_mobile {
+        display: none;
+
+        ul li a {
+            color: $greyblue;
+        }
+
+        ul li a:hover {
+            color: $white;
+            background-color: $bg_btn;
+            opacity: 0.8;
+        }
+
+        .btn{
+            background-color : $bg_btn;
+            color: $white;
+
+            &:hover{
+                background-color : $bg_btn_hover;                 
+            }
+        }
+    }
+
+    .header_content {
+        text-align: center;
+        padding-top: 40vh;
+
+        
+        h1 {
+            color: $white;
+            font-family: "Lato-Regular";
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        p {
+            color: $white;
+            font-family: "Lato-Regular";
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .btn-floating {
+            background-color: $bg_btn;
+            margin-top: 2em;
+        }
+    }
+}
+
+.content {
+    background-color: $fondBackgroundColor;
+    color: $white;
+
+    h2,h3,h4,h5,h6 {
+        font-family: "Lato-Regular";
+    }
+
+    section{
+        padding: 4rem 0;
+    
+        .icon-block{
+            padding: 10px;
+    
+            .btn{
+                background-color : $bg_btn;
+            
+                &:hover{
+                    background-color : $bg_btn_hover;                 
+                }
+            }
+        }
+    
+    &#features{
+        color: $white;
+        background-color: $bg_btn;
+    }
+    
+    &#referentiels{
+        .numscroller{
+            font-family: "Lato-Bold";
+            margin:0;
+            color : $bg_btn;
+            font-size: 80PX;}
+        }
+    
+    }
+}
+
+.page-footer {
+    background-color: $fondFooter;
+}
+
+.footer-copyright {
+    background-color: $fondCopyright;
+}
+
+// TABLETTE ET MOBILE PAYSAGE
+@media screen and (min-width: 600px) and (max-width: 992px){
+//HEADER
+    .header {
+        margin-bottom: 0;
+        .btn_mobile_menu {
+            padding-top: 0 !important;
+        }
+    }
+}
+
+// DESKTOP ET LARGE DESKTOP
+@media screen and (min-width: 993px) {
+//HEADER
+    .nav-wrapper {
+        display: block !important;
+
+        .btn_mobile_menu {
+            display: none;
+        }
+
+        #nav_mobile {
+            display: none;
+        }
+    }
+
+    .header_content {
+        h1{
+            font-size: 3.5em !important;
+        }
+    }
+
+}
+}
